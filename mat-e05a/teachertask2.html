@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task HTML 2</title>
+    <style>
+    body{                    /* TAG Selectors without anything     */
+        background-color: lightgrey;
+    }
+    .color-red, th{          /* CLASS Selectors with .       
+                             COMMA is the AND Operator     */
+        color:red;
+     }
+     .main-navigation{   /* ID Selectors with #                */
+        background-color: blue;
+     }
+     .main-table{ 
+        background-color: purple;
+     }
+     th{
+         background-color: yellow;
+     }
+     .first-navigation li{ /* SPACE is a Child Parent Selector   */
+        background-color: lightblue;
+     }
+   
+    </style>
+</head>
+<body>
+    <table class="main-table">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Piya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+    </table>
+    <ol class="first-navigation">
+        <li>First listpoint</li>
+        <li>Second listpoint</li>
+        <li>Third listpoint</li>
+    </ol>
+    <ul class="second-navigation">
+        <li>
+            <a href="" class="color-red">Home</a>
+        </li>
+        <li id="products">
+            <a href="https://www.google.com">Products</a>
+        </li>
+        <li>
+            <a class="color-red" href="https://www.google.com">Contact</a>
+        </li>
+    </ul>
+</body>
+</html>

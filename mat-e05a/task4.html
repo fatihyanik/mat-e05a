@@ -1,0 +1,110 @@
+<!--### CSS Task 2 ###
+Here the exact tasks:
+  1. Change for the first Element the font-size. font-family, font-style and change it to uppercase.
+  2. Change the Element of "erstes-p" the text-decoration, the font-size and the space between each letter.
+  3. Add some border and colors to an button.
+  4. On Hover, the button should change the size and the color
+  5. The navigation bar should be displayed beside as a row, the list-style and underline should be deleted and the colors should be changed. Also add some space on it.
+  6. Add some Hover to each List Item, for example change the colors.
+  7. The table should have borders on each side and the text should be centered. The table head should have an different background color. If you have problems with the borders, read the documentation.
+  8. The navigation bar and the table should be centered.-->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2</title>
+    <style>
+        .first-div{
+            font-size: 24px;
+            font-family: Verdana, sans-serif;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        .first-p{
+            text-decoration: underline;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .button{
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgrey;
+            padding: 2px 5px;
+        }
+        .button:hover{
+            color:lightgrey;
+            background-color: black;
+            font-weight: bold;
+            padding: 5px 8px;
+        }
+        .main-navigation{
+            list-style-type: none;
+            width: 300px;
+            height: auto;
+            margin: 50px auto;
+        }
+        .main-navigation li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .main-navigation li a{
+            text-decoration: none;
+            color: lightgreen;
+            background-color: darkgreen;
+            padding: 5px;
+        }
+        .main-navigation li a:hover{
+            color:darkgreen;
+            background-color: lightgreen;
+        }
+        .th-bg{
+            background-color: lightgreen;
+        }
+        table, td, th{
+            border: 2px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        .main-table{
+            border-collapse: collapse;
+            width: 300px;
+            height:auto;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="first-div">Here is the first div</div>
+    <p class="first-p">Here is the first paragraph</p>
+    <a class="button" href="">Click me</a>
+    <ul class="main-navigation">
+        <li>
+            <a href="https://www.google.com">First</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Second</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Third</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Fourth</a>
+        </li>
+    </ul>
+    <table class="main-table">
+        <tr>
+            <th class="th-bg">One</th>
+            <th class="th-bg">Two</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>2.</td>
+        </tr>
+    </table>
+</body>
+</html>
